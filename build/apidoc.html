@@ -1,0 +1,4450 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/Gillespie59/eslint-plugin-angularjs"
+
+    >eslint-plugin-angular (v2.2.1)</a>
+</h1>
+<h4>ESLint rules for AngularJS projects</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular">module eslint-plugin-angular</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>angularelement</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>component_limit</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>component_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>constant_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>controller_as</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>controller_as_route</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>controller_as_vm</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>controller_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>deferred</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>definedundefined</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>di</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>di_order</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>di_unused</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>directive_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>directive_restrict</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>document_service</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>dumb_inject</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>empty_controller</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>environments</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>factory_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>file_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>filter_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>foreach</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>function_type</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>interval_service</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>json_functions</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>module_dependency_order</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>module_getter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>module_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>module_setter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_controller</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_cookiestore</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_directive_replace</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_http_callback</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_inline_template</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_jquery_angularelement</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_private_call</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_run_logic</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_service_method</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>no_services</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>on_destroy</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>on_watch</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>one_dependency_per_line</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>prefer_component</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>provider_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>rest_service</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>rules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>service_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>timeout_service</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>typecheck_array</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>typecheck_date</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>typecheck_function</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>typecheck_number</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>typecheck_object</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>typecheck_string</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>value_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>watchers_execution</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>window_service</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.angularelement">module eslint-plugin-angular.angularelement</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.angularelement.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.angularelement.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.angularelement.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.component_limit">module eslint-plugin-angular.component_limit</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.component_limit.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.component_limit.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.component_limit.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.component_name">module eslint-plugin-angular.component_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.component_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.component_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.component_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.constant_name">module eslint-plugin-angular.constant_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.constant_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.constant_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.constant_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.controller_as">module eslint-plugin-angular.controller_as</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.controller_as.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.controller_as_route">module eslint-plugin-angular.controller_as_route</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.controller_as_route.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as_route.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as_route.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.controller_as_vm">module eslint-plugin-angular.controller_as_vm</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.controller_as_vm.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as_vm.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as_vm.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.controller_name">module eslint-plugin-angular.controller_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.controller_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.controller_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.deferred">module eslint-plugin-angular.deferred</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.deferred.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.deferred.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.deferred.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.definedundefined">module eslint-plugin-angular.definedundefined</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.definedundefined.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.definedundefined.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.definedundefined.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.di">module eslint-plugin-angular.di</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.di.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.di.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.di.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.di_order">module eslint-plugin-angular.di_order</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.di_order.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.di_order.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.di_order.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.di_unused">module eslint-plugin-angular.di_unused</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.di_unused.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.di_unused.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.di_unused.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.directive_name">module eslint-plugin-angular.directive_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.directive_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.directive_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.directive_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.directive_restrict">module eslint-plugin-angular.directive_restrict</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.directive_restrict.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.directive_restrict.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.directive_restrict.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.document_service">module eslint-plugin-angular.document_service</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.document_service.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.document_service.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.document_service.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.dumb_inject">module eslint-plugin-angular.dumb_inject</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.dumb_inject.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.dumb_inject.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.dumb_inject.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.empty_controller">module eslint-plugin-angular.empty_controller</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.empty_controller.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.empty_controller.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.empty_controller.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.factory_name">module eslint-plugin-angular.factory_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.factory_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.factory_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.factory_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.file_name">module eslint-plugin-angular.file_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.file_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.file_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.file_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.filter_name">module eslint-plugin-angular.filter_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.filter_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.filter_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.filter_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.foreach">module eslint-plugin-angular.foreach</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.foreach.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.foreach.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.foreach.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.function_type">module eslint-plugin-angular.function_type</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.function_type.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.function_type.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.function_type.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.interval_service">module eslint-plugin-angular.interval_service</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.interval_service.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.interval_service.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.interval_service.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.json_functions">module eslint-plugin-angular.json_functions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.json_functions.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.json_functions.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.json_functions.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.module_dependency_order">module eslint-plugin-angular.module_dependency_order</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.module_dependency_order.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.module_dependency_order.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.module_dependency_order.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.module_getter">module eslint-plugin-angular.module_getter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.module_getter.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.module_getter.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.module_getter.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.module_name">module eslint-plugin-angular.module_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.module_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.module_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.module_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.module_setter">module eslint-plugin-angular.module_setter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.module_setter.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.module_setter.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.module_setter.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_controller">module eslint-plugin-angular.no_controller</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_controller.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_controller.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_controller.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_cookiestore">module eslint-plugin-angular.no_cookiestore</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_cookiestore.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_cookiestore.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_cookiestore.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_directive_replace">module eslint-plugin-angular.no_directive_replace</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_directive_replace.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_directive_replace.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_directive_replace.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_http_callback">module eslint-plugin-angular.no_http_callback</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_http_callback.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_http_callback.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_http_callback.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_inline_template">module eslint-plugin-angular.no_inline_template</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_inline_template.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_inline_template.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_inline_template.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_jquery_angularelement">module eslint-plugin-angular.no_jquery_angularelement</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_jquery_angularelement.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_jquery_angularelement.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_jquery_angularelement.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_private_call">module eslint-plugin-angular.no_private_call</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_private_call.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_private_call.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_private_call.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_run_logic">module eslint-plugin-angular.no_run_logic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_run_logic.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_run_logic.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_run_logic.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_service_method">module eslint-plugin-angular.no_service_method</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_service_method.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_service_method.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_service_method.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.no_services">module eslint-plugin-angular.no_services</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.no_services.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.no_services.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.no_services.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.on_destroy">module eslint-plugin-angular.on_destroy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.on_destroy.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.on_destroy.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.on_destroy.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.on_watch">module eslint-plugin-angular.on_watch</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.on_watch.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.on_watch.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.on_watch.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.one_dependency_per_line">module eslint-plugin-angular.one_dependency_per_line</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.one_dependency_per_line.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.one_dependency_per_line.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.one_dependency_per_line.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.prefer_component">module eslint-plugin-angular.prefer_component</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.prefer_component.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.prefer_component.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.prefer_component.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.provider_name">module eslint-plugin-angular.provider_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.provider_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.provider_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.provider_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.rest_service">module eslint-plugin-angular.rest_service</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.rest_service.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.rest_service.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.rest_service.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.service_name">module eslint-plugin-angular.service_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.service_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.service_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.service_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.timeout_service">module eslint-plugin-angular.timeout_service</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.timeout_service.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.timeout_service.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.timeout_service.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.typecheck_array">module eslint-plugin-angular.typecheck_array</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.typecheck_array.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_array.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_array.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.typecheck_date">module eslint-plugin-angular.typecheck_date</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.typecheck_date.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_date.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_date.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.typecheck_function">module eslint-plugin-angular.typecheck_function</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.typecheck_function.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_function.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_function.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.typecheck_number">module eslint-plugin-angular.typecheck_number</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.typecheck_number.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_number.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_number.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.typecheck_object">module eslint-plugin-angular.typecheck_object</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.typecheck_object.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_object.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_object.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.typecheck_string">module eslint-plugin-angular.typecheck_string</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.typecheck_string.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_string.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_string.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.value_name">module eslint-plugin-angular.value_name</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.value_name.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.value_name.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.value_name.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.watchers_execution">module eslint-plugin-angular.watchers_execution</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.watchers_execution.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.watchers_execution.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.watchers_execution.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.window_service">module eslint-plugin-angular.window_service</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.window_service.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.window_service.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.window_service.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular" id="apidoc.module.eslint-plugin-angular">module eslint-plugin-angular</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.angularelement" id="apidoc.module.eslint-plugin-angular.angularelement">module eslint-plugin-angular.angularelement</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.angularelement.create" id="apidoc.element.eslint-plugin-angular.angularelement.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.angularelement.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+        CallExpression: function(node) {
+            if (node.callee.name === &#x27;$&#x27; || node.callee.name === &#x27;jQuery&#x27;) {
+                context.report(node, &#x27;You should use angular.element instead of the jQuery $ object&#x27;, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.component_limit" id="apidoc.module.eslint-plugin-angular.component_limit">module eslint-plugin-angular.component_limit</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.component_limit.create" id="apidoc.element.eslint-plugin-angular.component_limit.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.component_limit.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.component_name" id="apidoc.module.eslint-plugin-angular.component_name">module eslint-plugin-angular.component_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.component_name.create" id="apidoc.element.eslint-plugin-angular.component_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.component_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    if (context.settings.angular === 2) {
+        return {};
+    }
+
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+
+            if (utils.isAngularComponentDeclaration(node)) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;ng&#x27;) === 0) {
+                    context.report(node, &#x27;The {{component}} component should not start with &#x22;ng&#x22;. This is reserved for AngularJS
+ components&#x27;, {
+                        component: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{component}} component should be prefixed by {{prefix}}&#x27;, {
+                            component: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{component}} component should follow this pattern: {{prefix}}&#x27;, {
+                            component: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.constant_name" id="apidoc.module.eslint-plugin-angular.constant_name">module eslint-plugin-angular.constant_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.constant_name.create" id="apidoc.element.eslint-plugin-angular.constant_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.constant_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+            var isConstant;
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+            isConstant = utils.isAngularConstantDeclaration(node);
+
+            if (isConstant) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;$&#x27;) === 0) {
+                    context.report(node, &#x27;The {{constant}} constant should not start with &#x22;$&#x22;. This is reserved for AngularJS services
+&#x27;, {
+                        constant: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{constant}} constant should be prefixed by {{prefix}}&#x27;, {
+                            constant: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{constant}} constant should follow this pattern: {{prefix}}&#x27;, {
+                            constant: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.controller_as" id="apidoc.module.eslint-plugin-angular.controller_as">module eslint-plugin-angular.controller_as</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.controller_as.create" id="apidoc.element.eslint-plugin-angular.controller_as.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var badStatements = [];
+    var controllerFunctions = [];
+
+    // If your Angular code is written so that controller functions are in
+    // separate files from your .controller() calls, you can specify a regex for your controller function names
+    var controllerNameMatcher = context.options[0];
+    if (controllerNameMatcher &#x26;&#x26; utils.isStringRegexp(controllerNameMatcher)) {
+        controllerNameMatcher = utils.convertStringToRegex(controllerNameMatcher);
+    }
+
+    // check node against known controller functions or pattern if specified
+    function isControllerFunction(node) {
+        return controllerFunctions.indexOf(node) &#x3e;= 0 ||
+            (controllerNameMatcher &#x26;&#x26; (node.type === &#x27;FunctionExpression&#x27; || node.type === &#x27;FunctionDeclaration&#x27;) &#x26;&#x26;
+                node.id &#x26;&#x26; controllerNameMatcher.test(node.id.name));
+    }
+
+    // for each of the bad uses, find any parent nodes that are controller functions
+    function reportBadUses() {
+        if (controllerFunctions.length &#x3e; 0 || controllerNameMatcher) {
+            badStatements.forEach(function(item) {
+                item.parents.forEach(function(parent) {
+                    if (isControllerFunction(parent)) {
+                        context.report(item.stmt, &#x27;You should not set properties on $scope in controllers. Use controllerAs syntax
+ and add data to &#x22;this&#x22;&#x27;);
+                    }
+                });
+            });
+        }
+    }
+
+    return {
+        // Looking for .controller() calls here and getting the associated controller function
+        &#x27;CallExpression:exit&#x27;: function(node) {
+            if (utils.isAngularControllerDeclaration(node)) {
+                controllerFunctions.push(utils.getControllerDefinition(context, node));
+            }
+        },
+        // statements are checked here for bad uses of $scope
+        ExpressionStatement: function(stmt) {
+            if (stmt.expression.type === &#x27;AssignmentExpression&#x27; &#x26;&#x26;
+                stmt.expression.left.object &#x26;&#x26;
+                stmt.expression.left.object.name === &#x27;$scope&#x27; &#x26;&#x26;
+                utils.scopeProperties.indexOf(stmt.expression.left.property.name) &#x3c; 0) {
+                badStatements.push({parents: context.getAncestors(), stmt: stmt});
+            } else if (stmt.expression.type === &#x27;CallExpression&#x27; &#x26;&#x26;
+                stmt.expression.callee.object &#x26;&#x26;
+                stmt.expression.callee.object.name === &#x27;$scope&#x27; &#x26;&#x26;
+                utils.scopeProperties.indexOf(stmt.expression.callee.property.name) &#x3c; 0) {
+                badStatements.push({parents: context.getAncestors(), stmt: stmt});
+            }
+        },
+        &#x27;Program:exit&#x27;: function() {
+            reportBadUses();
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.controller_as_route" id="apidoc.module.eslint-plugin-angular.controller_as_route">module eslint-plugin-angular.controller_as_route</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.controller_as_route.create" id="apidoc.element.eslint-plugin-angular.controller_as_route.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as_route.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+        CallExpression: function(node) {
+            var routeObject = null;
+            var stateObject = null;
+            var hasControllerAs = false;
+            var controllerProp = null;
+            var stateName = null;
+
+            if (utils.isRouteDefinition(node)) {
+                // second argument in $routeProvider.when(&#x27;route&#x27;, {...})
+                routeObject = node.arguments[1];
+
+                if (routeObject.properties) {
+                    routeObject.properties.forEach(function(prop) {
+                        if (prop.key.name === &#x27;controller&#x27;) {
+                            controllerProp = prop;
+
+                            if (new RegExp(&#x27;\\sas\\s&#x27;).test(prop.value.value)) {
+                                hasControllerAs = true;
+                            }
+                        }
+
+                        if (prop.key.name === &#x27;controllerAs&#x27;) {
+                            if (hasControllerAs) {
+                                context.report(node, &#x27;The controllerAs syntax is defined twice for the route &#x22;{{route}}&#x22;&#x27;, {
+                                    route: node.arguments[0].value
+                                });
+                            }
+
+                            hasControllerAs = true;
+                        }
+                    });
+
+                    // if it&#x27;s a route without a controller, we shouldn&#x27;t warn about controllerAs
+                    if (controllerProp &#x26;&#x26; !hasControllerAs) {
+                        context.report(node, &#x27;Route &#x22;{{route}}&#x22; should use controllerAs syntax&#x27;, {
+                            route: node.arguments[0].value
+                        });
+                    }
+                }
+            } else if (utils.isUIRouterStateDefinition(node)) {
+                // state can be defined like .state({...}) or .state(&#x27;name&#x27;, {...})
+                var isObjectState = node.arguments.length === 1;
+                stateObject = isObjectState ? node.arguments[0] : node.arguments[1];
+
+                if (stateObject &#x26;&#x26; stateObject.properties) {
+                    stateObject.properties.forEach(function(prop) {
+                        if (prop.key.name === &#x27;controller&#x27;) {
+                            controllerProp = prop;
+                        }
+                        if (prop.key.name === &#x27;controllerAs&#x27;) {
+                            hasControllerAs = true;
+                        }
+                        // grab the name from the object for when they aren&#x27;t using .state(&#x27;name&#x27;,...)
+                        if (prop.key.name === &#x27;name&#x27;) {
+                            stateName = prop.value.value;
+                        }
+                    });
+
+                    if (!hasControllerAs &#x26;&#x26; controllerProp) {
+                        // if the controller is a string, controllerAs can be set like &#x27;controller as vm&#x27;
+                        if (controllerProp.value.type !== &#x27;Literal&#x27; || controllerProp.value.value.indexOf(&#x27; as &#x27;) &#x3c; 0) {
+                            context.report(node, &#x27;State &#x22;{{state}}&#x22; should use controllerAs syntax&#x27;, {
+                                state: isObjectState ? stateName : node.arguments[0].value
+                            });
+                        }
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.controller_as_vm" id="apidoc.module.eslint-plugin-angular.controller_as_vm">module eslint-plugin-angular.controller_as_vm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.controller_as_vm.create" id="apidoc.element.eslint-plugin-angular.controller_as_vm.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_as_vm.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var badStatements = [];
+    var badCaptureStatements = [];
+    var controllerFunctions = [];
+
+    var viewModelName = context.options[0] || &#x27;vm&#x27;;
+    // If your Angular code is written so that controller functions are in
+    // separate files from your .controller() calls, you can specify a regex for your controller function names
+    var controllerNameMatcher = context.options[1];
+    if (controllerNameMatcher &#x26;&#x26; utils.isStringRegexp(controllerNameMatcher)) {
+        controllerNameMatcher = utils.convertStringToRegex(controllerNameMatcher);
+    }
+
+    // check node against known controller functions or pattern if specified
+    function isControllerFunction(node) {
+        return controllerFunctions.indexOf(node) &#x3e;= 0 ||
+            (controllerNameMatcher &#x26;&#x26; (node.type === &#x27;FunctionExpression&#x27; || node.type === &#x27;FunctionDeclaration&#x27;) &#x26;&#x26;
+                node.id &#x26;&#x26; controllerNameMatcher.test(node.id.name));
+    }
+
+    // for each of the bad uses, find any parent nodes that are controller functions
+    function reportBadUses() {
+        if (controllerFunctions.length &#x3e; 0 || controllerNameMatcher) {
+            badCaptureStatements.forEach(function(item) {
+                item.parents.filter(isControllerFunction).forEach(function() {
+                    context.report(item.stmt, &#x27;You should assign &#x22;this&#x22; to a consistent variable across your project: {{capture}}&#x27;,
+                        {
+                            capture: viewModelName
+                        }
+                    );
+                });
+            });
+            badStatements.forEach(function(item) {
+                item.parents.filter(isControllerFunction).forEach(function() {
+                    context.report(item.stmt, &#x27;You should not use &#x22;this&#x22; directly. Instead, assign it to a variable called &#x22;{{capture
+}}&#x22;&#x27;,
+                        {
+                            capture: viewModelName
+                        }
+                    );
+                });
+            });
+        }
+    }
+
+    function isClassDeclaration(ancestors) {
+        return ancestors.findIndex(function(ancestor) {
+            return ancestor.type === &#x27;ClassDeclaration&#x27;;
+        }) &#x3e; -1;
+    }
+
+    return {
+        // Looking for .controller() calls here and getting the associated controller function
+        &#x27;CallExpression:exit&#x27;: function(node) {
+            if (utils.isAngularControllerDeclaration(node)) {
+                controllerFunctions.push(utils.getControllerDefinition(context, node));
+            }
+        },
+        // statements are checked here for bad uses of $scope
+        ThisExpression: function(stmt) {
+            var parents = context.getAncestors();
+            if (!isClassDeclaration(parents)) {
+                if (stmt.parent.type === &#x27;VariableDeclarator&#x27;) {
+                    if (!stmt.parent.id || stmt.parent.id.name !== viewModelName) {
+                        badCaptureStatements.push({parents: parents, stmt: stmt});
+                    }
+                } else {
+                    badStatements.push({parents: parents, stmt: stmt});
+                }
+            }
+        },
+        &#x27;Program:exit&#x27;: function() {
+            reportBadUses();
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.controller_name" id="apidoc.module.eslint-plugin-angular.controller_name">module eslint-plugin-angular.controller_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.controller_name.create" id="apidoc.element.eslint-plugin-angular.controller_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.controller_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0] || &#x27;/^[A-Z][a-zA-Z0-9]*Controller$/&#x27;;
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+
+            var callee = node.callee;
+            if (callee.type === &#x27;MemberExpression&#x27; &#x26;&#x26; callee.property.name === &#x27;controller&#x27;) {
+<span class="apidocCodeCommentSpan">                /**
+                 * Allow the usage of element.controller() and element.controller(&#x27;directiveName&#x27;) in unittests
+                 */
+</span>                if (node.arguments.length &#x3c; 2) {
+                    return;
+                }
+
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{controller}} controller should be prefixed by {{prefix}}&#x27;, {
+                            controller: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{controller}} controller should follow this pattern: {{prefix}}&#x27;, {
+                            controller: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.deferred" id="apidoc.module.eslint-plugin-angular.deferred">module eslint-plugin-angular.deferred</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.deferred.create" id="apidoc.element.eslint-plugin-angular.deferred.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.deferred.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        MemberExpression: function(node) {
+            if (node.object.type === &#x27;Identifier&#x27; &#x26;&#x26; utils.isAngularServiceImport(node.object.name, &#x27;$q&#x27;)) {
+                if (node.property.type === &#x27;Identifier&#x27; &#x26;&#x26; node.property.name === &#x27;defer&#x27;) {
+                    context.report(node, &#x27;You should not create a new promise with this syntax. Use the $q(function(resolve, reject
+) {}) syntax.&#x27;, {});
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.definedundefined" id="apidoc.module.eslint-plugin-angular.definedundefined">module eslint-plugin-angular.definedundefined</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.definedundefined.create" id="apidoc.element.eslint-plugin-angular.definedundefined.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.definedundefined.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function isCompareOperator(operator) {
+        return operator === &#x27;===&#x27; || operator === &#x27;!==&#x27; || operator === &#x27;==&#x27; || operator === &#x27;!=&#x27;;
+    }
+    function reportError(node) {
+        context.report(node, &#x27;You should not use directly the &#x22;undefined&#x22; keyword. Prefer &#x27; +
+            &#x27;angular.isUndefined or angular.isDefined&#x27;, {});
+    }
+<span class="apidocCodeCommentSpan">    /**
+    *    Rule that check if we use angular.is(Un)defined() instead of the undefined keyword
+    */
+</span>    return {
+        MemberExpression: function(node) {
+            if (node.object.name === &#x27;angular&#x27; &#x26;&#x26;
+                node.parent !== undefined &#x26;&#x26;
+                node.parent.parent !== undefined &#x26;&#x26;
+                node.parent.parent.operator === &#x27;!&#x27;) {
+                if (node.property.name === &#x27;isDefined&#x27;) {
+                    context.report(node, &#x27;Instead of !angular.isDefined, you can use the out-of-box angular.isUndefined method&#x27;, {});
+                } else if (node.property.name === &#x27;isUndefined&#x27;) {
+                    context.report(node, &#x27;Instead of !angular.isUndefined, you can use the out-of-box angular.isDefined method&#x27;, {});
+                }
+            }
+        },
+        BinaryExpression: function(node) {
+            if (isCompareOperator(node.operator)) {
+                if (utils.isTypeOfStatement(node.left) &#x26;&#x26; node.right.value === &#x27;undefined&#x27;) {
+                    reportError(node);
+                } else if (utils.isTypeOfStatement(node.right) &#x26;&#x26; node.left.value === &#x27;undefined&#x27;) {
+                    reportError(node);
+                } else if (node.left.type === &#x27;Identifier&#x27; &#x26;&#x26; node.left.name === &#x27;undefined&#x27;) {
+                    reportError(node);
+                } else if (node.right.type === &#x27;Identifier&#x27; &#x26;&#x26; node.right.name === &#x27;undefined&#x27;) {
+                    reportError(node);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.di" id="apidoc.module.eslint-plugin-angular.di">module eslint-plugin-angular.di</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.di.create" id="apidoc.element.eslint-plugin-angular.di.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.di.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.di_order" id="apidoc.module.eslint-plugin-angular.di_order">module eslint-plugin-angular.di_order</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.di_order.create" id="apidoc.element.eslint-plugin-angular.di_order.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.di_order.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.di_unused" id="apidoc.module.eslint-plugin-angular.di_unused">module eslint-plugin-angular.di_unused</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.di_unused.create" id="apidoc.element.eslint-plugin-angular.di_unused.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.di_unused.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.directive_name" id="apidoc.module.eslint-plugin-angular.directive_name">module eslint-plugin-angular.directive_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.directive_name.create" id="apidoc.element.eslint-plugin-angular.directive_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.directive_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    if (context.settings.angular === 2) {
+        return {};
+    }
+
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+
+            if (utils.isAngularDirectiveDeclaration(node)) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;ng&#x27;) === 0) {
+                    context.report(node, &#x27;The {{directive}} directive should not start with &#x22;ng&#x22;. This is reserved for AngularJS
+ directives&#x27;, {
+                        directive: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{directive}} directive should be prefixed by {{prefix}}&#x27;, {
+                            directive: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{directive}} directive should follow this pattern: {{prefix}}&#x27;, {
+                            directive: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.directive_restrict" id="apidoc.module.eslint-plugin-angular.directive_restrict">module eslint-plugin-angular.directive_restrict</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.directive_restrict.create" id="apidoc.element.eslint-plugin-angular.directive_restrict.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.directive_restrict.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var options = context.options[0] || {};
+    var restrictOpt = options.restrict || &#x27;AE&#x27;;
+    var explicitRestrict = options.explicit === &#x27;always&#x27;;
+    var restrictChars = restrictOpt.split(&#x27;&#x27;);
+
+    // Example RegExp for AE: /^A?E?$/
+    var restrictRegExp = new RegExp(&#x27;^&#x27; + restrictChars.join(&#x27;?&#x27;) + &#x27;?$&#x27;);
+    var foundDirectives = [];
+    var checkedDirectives = [];
+    var defaultRestrictions = [&#x27;AE&#x27;, &#x27;EA&#x27;];
+
+    function checkLiteralNode(node) {
+        if (node.type !== &#x27;Literal&#x27;) {
+            return;
+        }
+        var directiveNode;
+        context.getAncestors().some(function(ancestor) {
+            if (utils.isAngularDirectiveDeclaration(ancestor)) {
+                directiveNode = ancestor;
+                return true;
+            }
+        });
+        // The restrict property was not defined inside of a directive.
+        if (!directiveNode) {
+            return;
+        }
+        if (!explicitRestrict &#x26;&#x26; defaultRestrictions.indexOf(node.value) !== -1) {
+            context.report(node, &#x27;No need to explicitly specify a default directive restriction&#x27;);
+            return;
+        }
+
+        if (!restrictRegExp.test(node.value)) {
+            context.report(directiveNode, &#x27;Disallowed directive restriction. It must be one of {{allowed}} in that order&#x27;, {
+                allowed: restrictOpt
+            });
+        }
+
+        checkedDirectives.push(directiveNode);
+    }
+
+    return {
+        CallExpression: function(node) {
+            if (utils.isAngularDirectiveDeclaration(node)) {
+                foundDirectives.push(node);
+            }
+        },
+        AssignmentExpression: function(node) {
+            // Only check for literal member property assignments.
+            if (node.left.type !== &#x27;MemberExpression&#x27;) {
+                return;
+            }
+            // Only check setting properties named &#x27;restrict&#x27;.
+            if (node.left.property.name !== &#x27;restrict&#x27;) {
+                return;
+            }
+            checkLiteralNode(node.right);
+        },
+        Property: function(node) {
+            // This only checks for objects which have defined a literal restrict property.
+            if (node.key.name !== &#x27;restrict&#x27;) {
+                return;
+            }
+            checkLiteralNode(node.value);
+        },
+        &#x27;Program:exit&#x27;: function() {
+            if (explicitRestrict) {
+                foundDirectives.filter(function(directive) {
+                    return checkedDirectives.indexOf(directive) &#x3c; 0;
+                }).forEach(function(directiveNode) {
+                    context.report(directiveNode, &#x27;Missing directive restriction&#x27;);
+                });
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.document_service" id="apidoc.module.eslint-plugin-angular.document_service">module eslint-plugin-angular.document_service</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.document_service.create" id="apidoc.element.eslint-plugin-angular.document_service.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.document_service.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+        MemberExpression: function(node) {
+            if (node.object.name === &#x27;document&#x27; || (node.object.name === &#x27;window&#x27; &#x26;&#x26; node.property.name === &#x27;document&#x27;)) {
+                context.report(node, &#x27;You should use the $document service instead of the default document object&#x27;, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.dumb_inject" id="apidoc.module.eslint-plugin-angular.dumb_inject">module eslint-plugin-angular.dumb_inject</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.dumb_inject.create" id="apidoc.element.eslint-plugin-angular.dumb_inject.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.dumb_inject.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.empty_controller" id="apidoc.module.eslint-plugin-angular.empty_controller">module eslint-plugin-angular.empty_controller</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.empty_controller.create" id="apidoc.element.eslint-plugin-angular.empty_controller.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.empty_controller.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function report(node, name) {
+        context.report(node, &#x27;The {{ctrl}} controller is useless because empty. You can remove it from your Router configuration
+ or in one of your view&#x27;, {
+            ctrl: name
+        });
+    }
+
+    return {
+
+        CallExpression: function(node) {
+            if (utils.isAngularControllerDeclaration(node)) {
+                var name = node.arguments[0].value;
+
+                var fn = node.arguments[1];
+                if (utils.isArrayType(node.arguments[1])) {
+                    fn = node.arguments[1].elements[node.arguments[1].elements.length - 1];
+                }
+                if (utils.isFunctionType(fn) &#x26;&#x26; utils.isEmptyFunction(fn)) {
+                    report(node, name);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.factory_name" id="apidoc.module.eslint-plugin-angular.factory_name">module eslint-plugin-angular.factory_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.factory_name.create" id="apidoc.element.eslint-plugin-angular.factory_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.factory_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+            var isFactory;
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+            isFactory = utils.isAngularFactoryDeclaration(node);
+
+            if (isFactory) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;$&#x27;) === 0) {
+                    context.report(node, &#x27;The {{factory}} factory should not start with &#x22;$&#x22;. This is reserved for AngularJS services
+&#x27;, {
+                        factory: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{factory}} factory should be prefixed by {{prefix}}&#x27;, {
+                            factory: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{factory}} factory should follow this pattern: {{prefix}}&#x27;, {
+                            factory: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.file_name" id="apidoc.module.eslint-plugin-angular.file_name">module eslint-plugin-angular.file_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.file_name.create" id="apidoc.element.eslint-plugin-angular.file_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.file_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var options = context.options[0] || {};
+    var filename = path.basename(context.getFilename());
+    var componentTypeMappings = createComponentTypeMappings(options);
+
+    return {
+        CallExpression: function(node) {
+            if (utils.isAngularComponent(node) &#x26;&#x26; utils.isMemberExpression(node.callee)) {
+                var name = node.arguments[0].value;
+                var type = componentTypeMappings[node.callee.property.name];
+                var expectedName;
+
+                if (type === undefined || (type === &#x27;service&#x27; &#x26;&#x26; node.callee.object.name === &#x27;$provide&#x27;)) {
+                    return;
+                }
+
+                if (!name) {
+                    return;
+                }
+                expectedName = filenameUtil.createExpectedName(name, type, options);
+
+                if (expectedName !== filename) {
+                    context.report(node, &#x27;Filename must be &#x22;{{expectedName}}&#x22;&#x27;, {
+                        expectedName: expectedName
+                    });
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.filter_name" id="apidoc.module.eslint-plugin-angular.filter_name">module eslint-plugin-angular.filter_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.filter_name.create" id="apidoc.element.eslint-plugin-angular.filter_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.filter_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex;
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+
+            if (utils.isAngularFilterDeclaration(node)) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{filter}} filter should be prefixed by {{prefix}}&#x27;, {
+                            filter: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{filter}} filter should follow this pattern: {{prefix}}&#x27;, {
+                            filter: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.foreach" id="apidoc.module.eslint-plugin-angular.foreach">module eslint-plugin-angular.foreach</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.foreach.create" id="apidoc.element.eslint-plugin-angular.foreach.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.foreach.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+        MemberExpression: function(node) {
+            if (node.object.type === &#x27;Identifier&#x27; &#x26;&#x26; node.object.name !== &#x27;angular&#x27; &#x26;&#x26; node.property.name === &#x27;forEach&#x27;) {
+                context.report(node, &#x27;You should use the angular.forEach method&#x27;, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.function_type" id="apidoc.module.eslint-plugin-angular.function_type">module eslint-plugin-angular.function_type</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.function_type.create" id="apidoc.element.eslint-plugin-angular.function_type.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.function_type.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var angularObjectList = [&#x27;animation&#x27;, &#x27;config&#x27;, &#x27;constant&#x27;, &#x27;controller&#x27;, &#x27;directive&#x27;, &#x27;factory&#x27;, &#x27;filter&#x27;, &#x27;provider&#x27;, &#x27;service
+&#x27;, &#x27;value&#x27;, &#x27;decorator&#x27;];
+    var configType = context.options[0] || &#x27;anonymous&#x27;;
+    var messageByConfigType = {
+        anonymous: &#x27;Use anonymous functions instead of named function&#x27;,
+        named: &#x27;Use named functions instead of anonymous function&#x27;
+    };
+    var message = messageByConfigType[configType];
+
+    if (context.options[1]) {
+        angularObjectList = context.options[1];
+    }
+
+    function checkType(arg) {
+        return utils.isCallExpression(arg) ||
+            (configType === &#x27;named&#x27; &#x26;&#x26; (utils.isIdentifierType(arg) || utils.isNamedInlineFunction(arg))) ||
+            (configType === &#x27;anonymous&#x27; &#x26;&#x26; utils.isFunctionType(arg) &#x26;&#x26; !utils.isNamedInlineFunction(arg));
+    }
+
+    return {
+
+        CallExpression: function(node) {
+            var callee = node.callee;
+            var angularObjectName = callee.property &#x26;&#x26; callee.property.name;
+            var firstArgument = node.arguments[1];
+
+            if (utils.isAngularComponent(node) &#x26;&#x26; callee.type === &#x27;MemberExpression&#x27; &#x26;&#x26; angularObjectList.indexOf(angularObjectName
+) &#x3e;= 0) {
+                if (checkType(firstArgument)) {
+                    return;
+                }
+
+                if (utils.isArrayType(firstArgument)) {
+                    var last = firstArgument.elements[firstArgument.elements.length - 1];
+                    if (checkType(last) || (!utils.isFunctionType(last) &#x26;&#x26; !utils.isIdentifierType(last))) {
+                        return;
+                    }
+                }
+
+                context.report(node, message, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.interval_service" id="apidoc.module.eslint-plugin-angular.interval_service">module eslint-plugin-angular.interval_service</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.interval_service.create" id="apidoc.element.eslint-plugin-angular.interval_service.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.interval_service.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var message = &#x27;You should use the $interval service instead of the default window.setInterval method&#x27;;
+
+    return {
+
+        MemberExpression: function(node) {
+            if (node.object.name === &#x27;window&#x27; &#x26;&#x26; node.property.name === &#x27;setInterval&#x27;) {
+                context.report(node, message, {});
+            }
+        },
+
+        CallExpression: function(node) {
+            if (node.callee.name === &#x27;setInterval&#x27;) {
+                context.report(node, message, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.json_functions" id="apidoc.module.eslint-plugin-angular.json_functions">module eslint-plugin-angular.json_functions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.json_functions.create" id="apidoc.element.eslint-plugin-angular.json_functions.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.json_functions.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        MemberExpression: function(node) {
+            if (node.object.name === &#x27;JSON&#x27;) {
+                if (node.property.name === &#x27;stringify&#x27;) {
+                    context.report(node, &#x27;You should use the angular.toJson method instead of JSON.stringify&#x27;, {});
+                } else if (node.property.name === &#x27;parse&#x27;) {
+                    context.report(node, &#x27;You should use the angular.fromJson method instead of JSON.parse&#x27;, {});
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.module_dependency_order" id="apidoc.module.eslint-plugin-angular.module_dependency_order">module eslint-plugin-angular.module_dependency_order</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.module_dependency_order.create" id="apidoc.element.eslint-plugin-angular.module_dependency_order.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.module_dependency_order.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var options = context.options[0] || {};
+    var groupedMode = options.grouped !== false;
+    var moduleRegex;
+    if (groupedMode) {
+        moduleRegex = utils.convertPrefixToRegex(options.prefix);
+    }
+
+    var standard = [
+        // Libraries in the angular.js repository
+        &#x27;ng&#x27;,
+        &#x27;ngAnimate&#x27;,
+        &#x27;ngAria&#x27;,
+        &#x27;ngCookies&#x27;,
+        &#x27;ngLocale&#x27;,
+        &#x27;ngMessageFormat&#x27;,
+        &#x27;ngMessages&#x27;,
+        &#x27;ngMock&#x27;,
+        &#x27;ngResource&#x27;,
+        &#x27;ngRoute&#x27;,
+        &#x27;ngSanitize&#x27;,
+        &#x27;ngTouch&#x27;,
+
+        // Libraries maintained by the angular team, but in another repository
+        &#x27;ngMaterial&#x27;,
+        &#x27;ngNewRouter&#x27;
+    ];
+
+    function checkLiteral(node) {
+        if (node &#x26;&#x26; node.type !== &#x27;Literal&#x27; &#x26;&#x26; node.type !== &#x27;Identifier&#x27;) {
+            context.report(node, &#x27;Unexpected non-literal or identifier value&#x27; + node.type);
+            return false;
+        }
+        if (!node) {
+            return false;
+        }
+        return true;
+    }
+
+    function checkCombined(deps) {
+        var lastCorrect;
+        deps.elements.forEach(function(node) {
+            if (!checkLiteral(node)) {
+                return;
+            }
+            var value = node.value || node.name;
+            if (lastCorrect === undefined || lastCorrect.localeCompare(value) &#x3c; 0) {
+                lastCorrect = value;
+            } else {
+                context.report(node, &#x27;{{current}} should be sorted before {{last}}&#x27;, {
+                    current: value,
+                    last: lastCorrect
+                });
+            }
+        });
+    }
+
+    function isStandardModule(value) {
+        return standard.indexOf(value) !== -1;
+    }
+
+    function isCustomModule(value) {
+        return moduleRegex &#x26;&#x26; moduleRegex.test(value);
+    }
+
+    function checkGrouped(deps) {
+        var lastCorrect;
+        var group = &#x27;standard&#x27;;
+        deps.elements.forEach(function loop(node) {
+            if (!checkLiteral(node)) {
+                return;
+            }
+            var value = node.value || node.name;
+            if (lastCorrect === undefined) {
+                lastCorrect = value;
+                if (isCustomModule(value)) {
+                    group = &#x27;custom&#x27;;
+                } else if (standard.indexOf(value) === -1) {
+                    group = &#x27;third party&#x27;;
+                }
+                return;
+            }
+            if (group === &#x27;standard&#x27;) {
+                if (isStandardModule(value)) {
+                    if (lastCorrect.localeCompare(value) &#x3e; 0) {
+                        context.report(node, &#x27;{{current}} should be sorted before {{last}}&#x27;, {
+                            current: value,
+                            last: lastCorrect
+                        });
+                    } else {
+                        lastCorrect = value;
+                    }
+                } else {
+                    if (isCustomModule(value)) {
+                        group = &#x27;custom&#x27;;
+                    } else {
+                        group = &#x27;third party&#x27;;
+                    }
+                    lastCorrect = value;
+                }
+            }
+            if (group === &#x27;third party&#x27;) {
+                if (isStandardModule(value)) {
+                    context.report(node, &#x27;{{current}} is a standard module and should be sorted before {{last}}&#x27;, {
+                        current: value,
+                        last: lastCorrect
+                    });
+                } else if (isCustomModule(value)) {
+                    group = &#x27;custom&#x27;;
+                    lastCorrect = value;
+                } else if (lastCorrect.localeCompare(value) &#x3e; 0) {
+                    context.report(node, &#x27;{{current}} should be sorted before {{last}}&#x27;, {
+                        current: value,
+                        last: lastCorrect
+                    });
+                } else {
+                    lastCorrect = value;
+                }
+            }
+            if (group === &#x27;custom&#x27;) {
+                if (isStandardModule(value)) {
+                    context.report(node, &#x27;{{current}} is a standard module and sho ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.module_getter" id="apidoc.module.eslint-plugin-angular.module_getter">module eslint-plugin-angular.module_getter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.module_getter.create" id="apidoc.element.eslint-plugin-angular.module_getter.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.module_getter.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        ExpressionStatement: function(node) {
+            if ((utils.isAngularControllerDeclaration(node.expression) ||
+                utils.isAngularFilterDeclaration(node.expression) ||
+                utils.isAngularServiceDeclaration(node.expression) ||
+                utils.isAngularFactoryDeclaration(node.expression) ||
+                utils.isAngularConstantDeclaration(node.expression) ||
+                utils.isAngularValueDeclaration(node.expression) ||
+                utils.isAngularDirectiveDeclaration(node.expression) ||
+                utils.isAngularRunSection(node.expression) ||
+                utils.isAngularConfigSection(node.expression)) &#x26;&#x26;
+
+                !utils.isAngularModuleDeclaration(node.expression)) {
+                var calleeObject = node.expression.callee.object;
+
+                while (calleeObject !== undefined &#x26;&#x26; calleeObject.type === &#x27;CallExpression&#x27; &#x26;&#x26; !utils.isAngularModuleGetter(calleeObject
+)) {
+                    calleeObject = calleeObject.callee.object;
+                }
+                if (!(calleeObject !== undefined &#x26;&#x26; calleeObject.type === &#x27;CallExpression&#x27; &#x26;&#x26; utils.isAngularModuleGetter(calleeObject
+))) {
+                    context.report(node, &#x27;Avoid using a variable and instead use chaining with the getter syntax.&#x27;);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.module_name" id="apidoc.module.eslint-plugin-angular.module_name">module eslint-plugin-angular.module_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.module_name.create" id="apidoc.element.eslint-plugin-angular.module_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.module_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+
+            if (utils.isAngularModuleDeclaration(node)) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;ng&#x27;) === 0) {
+                    context.report(node, &#x27;The {{module}} module should not start with &#x22;ng&#x22;. This is reserved for AngularJS modules
+&#x27;, {
+                        module: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{module}} module should be prefixed by {{prefix}}&#x27;, {
+                            module: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{module}} module should follow this pattern: {{prefix}}&#x27;, {
+                            module: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.module_setter" id="apidoc.module.eslint-plugin-angular.module_setter">module eslint-plugin-angular.module_setter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.module_setter.create" id="apidoc.element.eslint-plugin-angular.module_setter.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.module_setter.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        VariableDeclaration: function(node) {
+            var variableDeclarator = node.declarations[0];
+            var rightExpression;
+
+            if (variableDeclarator.init) {
+                rightExpression = variableDeclarator.init;
+
+                if (rightExpression.arguments &#x26;&#x26; utils.isAngularModuleDeclaration(rightExpression)) {
+                    context.report(rightExpression, &#x27;Declare modules without a variable using the setter syntax.&#x27;);
+                }
+            }
+        },
+        AssignmentExpression: function(node) {
+            if (node.right.arguments &#x26;&#x26; utils.isAngularModuleDeclaration(node.right)) {
+                context.report(node.right, &#x27;Declare modules without a variable using the setter syntax.&#x27;);
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_controller" id="apidoc.module.eslint-plugin-angular.no_controller">module eslint-plugin-angular.no_controller</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_controller.create" id="apidoc.element.eslint-plugin-angular.no_controller.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_controller.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            if (utils.isAngularControllerDeclaration(node)) {
+                context.report(node, &#x27;Based on the Component-First Pattern, you should avoid the use of controllers&#x27;, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_cookiestore" id="apidoc.module.eslint-plugin-angular.no_cookiestore">module eslint-plugin-angular.no_cookiestore</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_cookiestore.create" id="apidoc.element.eslint-plugin-angular.no_cookiestore.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_cookiestore.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        MemberExpression: function(node) {
+            if (node.object &#x26;&#x26; node.object.name === &#x27;$cookieStore&#x27;) {
+                context.report(node, &#x27;Since Angular 1.4, the $cookieStore service is deprecated. Please use now the $cookies service
+.&#x27;, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_directive_replace" id="apidoc.module.eslint-plugin-angular.no_directive_replace">module eslint-plugin-angular.no_directive_replace</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_directive_replace.create" id="apidoc.element.eslint-plugin-angular.no_directive_replace.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_directive_replace.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_http_callback" id="apidoc.module.eslint-plugin-angular.no_http_callback">module eslint-plugin-angular.no_http_callback</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_http_callback.create" id="apidoc.element.eslint-plugin-angular.no_http_callback.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_http_callback.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var httpMethods = [
+        &#x27;delete&#x27;,
+        &#x27;get&#x27;,
+        &#x27;head&#x27;,
+        &#x27;jsonp&#x27;,
+        &#x27;patch&#x27;,
+        &#x27;post&#x27;,
+        &#x27;put&#x27;
+    ];
+
+    function isHttpCall(node) {
+        if (node.callee.type === &#x27;MemberExpression&#x27;) {
+            return httpMethods.indexOf(node.callee.property.name) !== -1 ||
+                (node.callee.object.type === &#x27;CallExpression&#x27; &#x26;&#x26; isHttpCall(node.callee.object));
+        }
+        if (node.callee.type === &#x27;Identifier&#x27;) {
+            return node.callee.name === &#x27;$http&#x27;;
+        }
+    }
+
+    return {
+        CallExpression: function(node) {
+            if (node.callee.type !== &#x27;MemberExpression&#x27;) {
+                return;
+            }
+            if (node.callee.property.name === &#x27;success&#x27; &#x26;&#x26; isHttpCall(node)) {
+                return context.report(node, &#x27;$http success is deprecated. Use then instead&#x27;);
+            }
+            if (node.callee.property.name === &#x27;error&#x27; &#x26;&#x26; isHttpCall(node)) {
+                context.report(node, &#x27;$http error is deprecated. Use then or catch instead&#x27;);
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_inline_template" id="apidoc.module.eslint-plugin-angular.no_inline_template">module eslint-plugin-angular.no_inline_template</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_inline_template.create" id="apidoc.element.eslint-plugin-angular.no_inline_template.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_inline_template.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    // Extracts any HTML tags.
+    var regularTagPattern = /&#x3c;(.+?)&#x3e;/g;
+    // Extracts self closing HTML tags.
+    var selfClosingTagPattern = /&#x3c;(.+?)\/&#x3e;/g;
+
+    var allowSimple = (context.options[0] &#x26;&#x26; context.options[0].allowSimple) !== false;
+
+    function reportComplex(node) {
+        context.report(node, &#x27;Inline template is too complex. Use an external template instead&#x27;);
+    }
+
+    return {
+        Property: function(node) {
+            if (node.key.name !== &#x27;template&#x27; || node.value.type !== &#x27;Literal&#x27;) {
+                return;
+            }
+            if (!allowSimple) {
+                context.report(node, &#x27;Inline templates are not allowed. Use an external template instead&#x27;);
+            }
+            if ((node.value.value &#x26;&#x26; node.value.value.match(regularTagPattern) || []).length &#x3e; 2) {
+                return reportComplex(node);
+            }
+            if ((node.value.value &#x26;&#x26; node.value.value.match(selfClosingTagPattern) || []).length &#x3e; 1) {
+                return reportComplex(node);
+            }
+            if (node.value &#x26;&#x26; node.value.raw.indexOf(&#x27;\\&#x27;) !== -1) {
+                reportComplex(node);
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_jquery_angularelement" id="apidoc.module.eslint-plugin-angular.no_jquery_angularelement">module eslint-plugin-angular.no_jquery_angularelement</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_jquery_angularelement.create" id="apidoc.element.eslint-plugin-angular.no_jquery_angularelement.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_jquery_angularelement.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        MemberExpression: function(node) {
+            if (node.object.name === &#x27;angular&#x27; &#x26;&#x26; node.property.name === &#x27;element&#x27;) {
+                if (node.parent !== undefined &#x26;&#x26; node.parent.parent !== undefined &#x26;&#x26;
+                    node.parent.parent.type === &#x27;CallExpression&#x27; &#x26;&#x26;
+                    node.parent.parent.callee.type === &#x27;Identifier&#x27; &#x26;&#x26;
+                    (node.parent.parent.callee.name === &#x27;jQuery&#x27; || node.parent.parent.callee.name === &#x27;$&#x27;)) {
+                    context.report(node, &#x27;angular.element returns already a jQLite element. No need to wrap with the jQuery object
+&#x27;, {});
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_private_call" id="apidoc.module.eslint-plugin-angular.no_private_call">module eslint-plugin-angular.no_private_call</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_private_call.create" id="apidoc.element.eslint-plugin-angular.no_private_call.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_private_call.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var options = context.options[0] || {};
+    var allowed = options.allow || [];
+
+    function check(node, name) {
+        if (name.slice(0, 2) === &#x27;$$&#x27; &#x26;&#x26; allowed.indexOf(name) &#x3c; 0) {
+            context.report(node, &#x27;Using $$-prefixed Angular objects/methods are not recommended&#x27;, {});
+        }
+    }
+    return {
+
+        Identifier: function(node) {
+            check(node, node.name);
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_run_logic" id="apidoc.module.eslint-plugin-angular.no_run_logic">module eslint-plugin-angular.no_run_logic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_run_logic.create" id="apidoc.element.eslint-plugin-angular.no_run_logic.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_run_logic.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_service_method" id="apidoc.module.eslint-plugin-angular.no_service_method">module eslint-plugin-angular.no_service_method</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_service_method.create" id="apidoc.element.eslint-plugin-angular.no_service_method.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_service_method.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            if (utils.isAngularComponent(node) &#x26;&#x26; node.callee.property &#x26;&#x26; node.callee.property.name === &#x27;service&#x27;) {
+                context.report(node, &#x27;You should prefer the factory() method instead of service()&#x27;, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.no_services" id="apidoc.module.eslint-plugin-angular.no_services">module eslint-plugin-angular.no_services</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.no_services.create" id="apidoc.element.eslint-plugin-angular.no_services.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.no_services.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    let angularObjectList = [&#x27;controller&#x27;, &#x27;filter&#x27;, &#x27;directive&#x27;];
+    let badServices = [];
+    let map;
+    let message = &#x27;REST API calls should be implemented in a specific service&#x27;;
+
+    function isArray(item) {
+        return Object.prototype.toString.call(item) === &#x27;[object Array]&#x27;;
+    }
+
+    function isObject(item) {
+        return Object.prototype.toString.call(item) === &#x27;[object Object]&#x27;;
+    }
+
+    if (context.options[0] === undefined) {
+        badServices = [/\$http/, /\$resource/, /Restangular/, /\$q/, /\$filter/];
+    }
+
+    if (isArray(context.options[0])) {
+        badServices = context.options[0];
+    }
+
+    if (isArray(context.options[1])) {
+        angularObjectList = context.options[1];
+    }
+
+    if (isObject(context.options[0])) {
+        map = context.options[0];
+
+        let result = [];
+        let prop;
+
+        for (prop in map) {
+            if (map.hasOwnProperty(prop)) {
+                result.push(prop);
+            }
+        }
+
+        angularObjectList = result;
+    }
+
+    function isSetBedService(serviceName, angularObjectName) {
+        if (map) {
+            return map[angularObjectName].find(object =&#x3e; utils.convertPrefixToRegex(object).test(serviceName));
+        }
+        return badServices.find(object =&#x3e; utils.convertPrefixToRegex(object).test(serviceName));
+    }
+
+    return {
+
+        CallExpression: function(node) {
+            let callee = node.callee;
+
+            if (utils.isAngularComponent(node) &#x26;&#x26; callee.type === &#x27;MemberExpression&#x27; &#x26;&#x26; angularObjectList.indexOf(callee.property
+.name) &#x3e;= 0) {
+                if (utils.isFunctionType(node.arguments[1])) {
+                    node.arguments[1].params.forEach(function(service) {
+                        if (service.type === &#x27;Identifier&#x27; &#x26;&#x26; isSetBedService(service.name, callee.property.name)) {
+                            context.report(node, message + &#x27; (&#x27; + service.name + &#x27; in &#x27; + callee.property.name + &#x27;)&#x27;, {});
+                        }
+                    });
+                }
+
+                if (utils.isArrayType(node.arguments[1])) {
+                    node.arguments[1].elements.forEach(function(service) {
+                        if (service.type === &#x27;Literal&#x27; &#x26;&#x26; isSetBedService(service.value, callee.property.name)) {
+                            context.report(node, message + &#x27; (&#x27; + service.value + &#x27; in &#x27; + callee.property.name + &#x27;)&#x27;, {});
+                        }
+                    });
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.on_destroy" id="apidoc.module.eslint-plugin-angular.on_destroy">module eslint-plugin-angular.on_destroy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.on_destroy.create" id="apidoc.element.eslint-plugin-angular.on_destroy.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.on_destroy.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function report(node) {
+        context.report(node, &#x27;You probably misspelled $on(&#x22;$destroy&#x22;).&#x27;);
+    }
+
+<span class="apidocCodeCommentSpan">    /**
+     * Return true if the given node is a call expression calling a function
+     * named &#x27;$on&#x27;.
+     */
+</span>    function isOn(node) {
+        var calledFunction = node.callee;
+        if (calledFunction.type !== &#x27;MemberExpression&#x27;) {
+            return false;
+        }
+
+        // can only easily tell what name was used if a simple
+        // identifiers were used to access it.
+        var accessedFunction = calledFunction.property;
+        if (accessedFunction.type !== &#x27;Identifier&#x27;) {
+            return false;
+        }
+
+        var functionName = accessedFunction.name;
+
+        return functionName === &#x27;$on&#x27;;
+    }
+
+    /**
+     * Return true if the given node is a call expression that has a first
+     * argument of the string &#x27;$destroy&#x27;.
+     */
+    function isFirstArgDestroy(node) {
+        var args = node.arguments;
+
+        return (args.length &#x3e;= 1 &#x26;&#x26;
+            args[0].type === &#x27;Literal&#x27; &#x26;&#x26;
+            args[0].value === &#x27;destroy&#x27;);
+    }
+
+    return {
+        CallExpression: function(node) {
+            if (isOn(node) &#x26;&#x26; isFirstArgDestroy(node)) {
+                report(node);
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.on_watch" id="apidoc.module.eslint-plugin-angular.on_watch">module eslint-plugin-angular.on_watch</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.on_watch.create" id="apidoc.element.eslint-plugin-angular.on_watch.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.on_watch.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function report(node, method) {
+        context.report(node, &#x27;The &#x22;{{method}}&#x22; call should be assigned to a variable, in order to be destroyed during the $destroy
+ event&#x27;, {
+            method: method
+        });
+    }
+
+<span class="apidocCodeCommentSpan">    /**
+     * Return true if the given node is a call expression calling a function
+     * named &#x27;$on&#x27; or &#x27;$watch&#x27; on an object named &#x27;$scope&#x27;, &#x27;$rootScope&#x27; or
+     * &#x27;scope&#x27;.
+     */
+</span>    function isScopeOnOrWatch(node, scopes) {
+        if (node.type !== &#x27;CallExpression&#x27;) {
+            return false;
+        }
+
+        var calledFunction = node.callee;
+        if (calledFunction.type !== &#x27;MemberExpression&#x27;) {
+            return false;
+        }
+
+        // can only easily tell what name was used if a simple
+        // identifiers were used to access it.
+        var parentObject = calledFunction.object;
+        var accessedFunction = calledFunction.property;
+
+        // cannot check name of the parent object if it is returned from a
+        // complex expression.
+        if (parentObject.type !== &#x27;Identifier&#x27; ||
+            accessedFunction.type !== &#x27;Identifier&#x27;) {
+            return false;
+        }
+
+        var objectName = parentObject.name;
+        var functionName = accessedFunction.name;
+
+        return scopes.indexOf(objectName) &#x3e;= 0 &#x26;&#x26; (functionName === &#x27;$on&#x27; ||
+            functionName === &#x27;$watch&#x27;);
+    }
+
+    /**
+     * Return true if the given node is a call expression that has a first
+     * argument of the string &#x27;$destroy&#x27;.
+     */
+    function isFirstArgDestroy(node) {
+        var args = node.arguments;
+
+        return (args.length &#x3e;= 1 &#x26;&#x26;
+            args[0].type === &#x27;Literal&#x27; &#x26;&#x26;
+            args[0].value === &#x27;$destroy&#x27;);
+    }
+
+    return {
+
+        CallExpression: function(node) {
+            if (isScopeOnOrWatch(node, [&#x27;$rootScope&#x27;]) &#x26;&#x26; !isFirstArgDestroy(node)) {
+                if (node.parent.type !== &#x27;VariableDeclarator&#x27; &#x26;&#x26;
+                    node.parent.type !== &#x27;AssignmentExpression&#x27; &#x26;&#x26;
+                    !(isScopeOnOrWatch(node.parent, [&#x27;$rootScope&#x27;, &#x27;$scope&#x27;, &#x27;scope&#x27;]) &#x26;&#x26;
+                        isFirstArgDestroy(node.parent))) {
+                    report(node, node.callee.property.name);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.one_dependency_per_line" id="apidoc.module.eslint-plugin-angular.one_dependency_per_line">module eslint-plugin-angular.one_dependency_per_line</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.one_dependency_per_line.create" id="apidoc.element.eslint-plugin-angular.one_dependency_per_line.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.one_dependency_per_line.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var angularObjectList = [&#x27;animation&#x27;, &#x27;config&#x27;, &#x27;constant&#x27;, &#x27;controller&#x27;, &#x27;directive&#x27;, &#x27;factory&#x27;, &#x27;filter&#x27;, &#x27;provider&#x27;, &#x27;service
+&#x27;, &#x27;value&#x27;, &#x27;decorator&#x27;];
+
+    function checkArgumentPositionInFunction(node) {
+        if (!node.params || node.params.length &#x3c; 2) {
+            return;
+        }
+
+        var linesFound = [];
+        node.params.forEach(reportMultipleItemsInOneLine.bind(null, node, linesFound));
+    }
+
+    function reportMultipleItemsInOneLine(node, linesFound, item) {
+        var currentLine = item.loc.start.line;
+        if (linesFound.indexOf(currentLine) !== -1) {
+            context.report({
+                node: node,
+                message: &#x27;Do not use multiple dependencies in one line&#x27;,
+                loc: item.loc.start
+            });
+        }
+        linesFound.push(currentLine);
+    }
+
+    function checkArgumentPositionArrayExpression(angularComponentNode, arrayNode) {
+        var linesFound = [];
+
+        arrayNode.elements.forEach(function(element) {
+            if (element.type === &#x27;Literal&#x27;) {
+                reportMultipleItemsInOneLine(arrayNode, linesFound, element);
+            }
+            if (element.type === &#x27;FunctionExpression&#x27;) {
+                checkArgumentPositionInFunction(element);
+            }
+            if (element.type === &#x27;Identifier&#x27;) {
+                var fn = getFunctionDeclaration(angularComponentNode, element.name);
+                checkArgumentPositionInFunction(fn);
+            }
+        });
+    }
+
+    function findFunctionDeclarationByDeclaration(body, fName) {
+        return body.find(function(item) {
+            return item.type === &#x27;FunctionDeclaration&#x27; &#x26;&#x26; item.id.name === fName;
+        });
+    }
+
+    function findFunctionDeclarationByVariableDeclaration(body, fName) {
+        var fn;
+        body.forEach(function(item) {
+            if (fn) {
+                return;
+            }
+            if (item.type === &#x27;VariableDeclaration&#x27;) {
+                item.declarations.forEach(function(declaration) {
+                    if (declaration.type === &#x27;VariableDeclarator&#x27; &#x26;&#x26;
+                        declaration.id &#x26;&#x26;
+                        declaration.id.name === fName &#x26;&#x26;
+                        declaration.init &#x26;&#x26;
+                        declaration.init.type === &#x27;FunctionExpression&#x27;
+                    ) {
+                        fn = declaration.init;
+                    }
+                });
+            }
+        });
+        return fn;
+    }
+
+    function getFunctionDeclaration(node, fName) {
+        if (node.type === &#x27;BlockStatement&#x27; || node.type === &#x27;Program&#x27;) {
+            if (node.body) {
+                var fn = findFunctionDeclarationByDeclaration(node.body, fName);
+                if (fn) {
+                    return fn;
+                }
+                fn = findFunctionDeclarationByVariableDeclaration(node.body, fName);
+                if (fn) {
+                    return fn;
+                }
+            }
+        }
+        if (node.parent) {
+            return getFunctionDeclaration(node.parent, fName);
+        }
+    }
+
+    return {
+
+        CallExpression: function(node) {
+            var fn;
+            if (utils.isAngularComponent(node) &#x26;&#x26;
+                node.callee.type === &#x27;MemberExpression&#x27; &#x26;&#x26;
+                node.arguments[1].type === &#x27;FunctionExpression&#x27; &#x26;&#x26;
+                angularObjectList.indexOf(node.callee.property.name) &#x3e;= 0) {
+                fn = node.arguments[1];
+                return checkArgumentPositionInFunction(fn);
+            }
+            if (utils.isAngularComponent(node) &#x26;&#x26;
+                node.callee.type === &#x27;MemberExpression&#x27; &#x26;&#x26;
+                node.arguments[1].type === &#x27;Identifier&#x27; &#x26;&#x26;
+                angularObjectList.indexOf(node.callee.property.name) &#x3e;= 0) {
+                var fName = node.arguments[1].name;
+                fn = getFunctionDeclaration(node, fName);
+                if (fn) {
+                    return checkArgumentPositionInFunction(fn);
+                }
+            }
+            if (utils.isAngularComponent(node) &#x26;&#x26;
+                node.callee.type === &#x27;MemberExpression&#x27; &#x26; ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.prefer_component" id="apidoc.module.eslint-plugin-angular.prefer_component">module eslint-plugin-angular.prefer_component</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.prefer_component.create" id="apidoc.element.eslint-plugin-angular.prefer_component.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.prefer_component.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapper(context) {
+    reset();
+    var ruleObject = ruleDefinition(context);
+    injectCall(ruleObject, context, &#x27;CallExpression:exit&#x27;, checkCallee);
+    injectCall(ruleObject, context, &#x27;Program:exit&#x27;, callAngularRules);
+    return ruleObject;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.provider_name" id="apidoc.module.eslint-plugin-angular.provider_name">module eslint-plugin-angular.provider_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.provider_name.create" id="apidoc.element.eslint-plugin-angular.provider_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.provider_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+            var isProvider;
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+            isProvider = utils.isAngularProviderDeclaration(node);
+
+            if (isProvider) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;$&#x27;) === 0) {
+                    context.report(node, &#x27;The {{provider}} provider should not start with &#x22;$&#x22;. This is reserved for AngularJS services
+&#x27;, {
+                        provider: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{provider}} provider should be prefixed by {{prefix}}&#x27;, {
+                            provider: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{provider}} provider should follow this pattern: {{prefix}}&#x27;, {
+                            provider: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.rest_service" id="apidoc.module.eslint-plugin-angular.rest_service">module eslint-plugin-angular.rest_service</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.rest_service.create" id="apidoc.element.eslint-plugin-angular.rest_service.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.rest_service.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var angularObjectList = [&#x27;controller&#x27;, &#x27;filter&#x27;, &#x27;directive&#x27;, &#x27;service&#x27;, &#x27;factory&#x27;, &#x27;provider&#x27;];
+    var services = [&#x27;$http&#x27;, &#x27;$resource&#x27;, &#x27;Restangular&#x27;];
+    var message = &#x27;You should use the same service ({{method}}) for REST API calls&#x27;;
+
+
+    return {
+
+        CallExpression: function(node) {
+            function checkElement(element) {
+                if (element.type === &#x27;Identifier&#x27; &#x26;&#x26; services.indexOf(element.name) &#x3e;= 0 &#x26;&#x26; context.options[0] !== element.name) {
+                    context.report(node, message, {
+                        method: context.options[0]
+                    });
+                } else if (element.type === &#x27;Literal&#x27; &#x26;&#x26; services.indexOf(element.value) &#x3e;= 0 &#x26;&#x26; context.options[0] !== element.
+value) {
+                    context.report(node, message, {
+                        method: context.options[0]
+                    });
+                }
+            }
+
+            function checkAllElements(elements) {
+                elements.forEach(checkElement);
+            }
+
+            var callee = node.callee;
+
+            if (utils.isAngularComponent(node) &#x26;&#x26; callee.type === &#x27;MemberExpression&#x27; &#x26;&#x26; angularObjectList.indexOf(callee.property
+.name) &#x3e;= 0) {
+                if (utils.isFunctionType(node.arguments[1])) {
+                    checkAllElements(node.arguments[1].params);
+                }
+
+                if (utils.isArrayType(node.arguments[1])) {
+                    checkAllElements(node.arguments[1].elements);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.service_name" id="apidoc.module.eslint-plugin-angular.service_name">module eslint-plugin-angular.service_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.service_name.create" id="apidoc.element.eslint-plugin-angular.service_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.service_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    warnForDeprecatedBehavior(context.options);
+
+    return {
+
+        CallExpression: function(node) {
+            var config = getConfig(context.options);
+            var prefix = getPrefixFromOptions(context.options);
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+            var isService;
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+
+            if (config.oldBehavior) {
+                isService = utils.isAngularServiceDeclarationDeprecated(node);
+            } else {
+                isService = utils.isAngularServiceDeclaration(node);
+            }
+
+            if (isService) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;$&#x27;) === 0) {
+                    context.report(node, &#x27;The {{service}} service should not start with &#x22;$&#x22;. This is reserved for AngularJS services
+&#x27;, {
+                        service: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{service}} service should be prefixed by {{prefix}}&#x27;, {
+                            service: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{service}} service should follow this pattern: {{prefix}}&#x27;, {
+                            service: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.timeout_service" id="apidoc.module.eslint-plugin-angular.timeout_service">module eslint-plugin-angular.timeout_service</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.timeout_service.create" id="apidoc.element.eslint-plugin-angular.timeout_service.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.timeout_service.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var message = &#x27;You should use the $timeout service instead of the default window.setTimeout method&#x27;;
+
+    return {
+
+        MemberExpression: function(node) {
+            if (node.property.name !== &#x27;setTimeout&#x27;) {
+                return;
+            }
+
+            if (node.object.type === &#x27;Identifier&#x27;) {
+                if ((node.object.name === &#x27;window&#x27; || node.object.name === &#x27;$window&#x27;)) {
+                    context.report(node, message, {});
+                }
+
+                return;
+            }
+
+            // Detect expression this.$window.setTimeout which is what we would see in ES6 code when using classes
+            var parentNode = node.object;
+
+            if (parentNode.object.type === &#x27;ThisExpression&#x27; &#x26;&#x26; parentNode.property.name === &#x27;$window&#x27;) {
+                context.report(node, message, {});
+            }
+        },
+
+        CallExpression: function(node) {
+            if (node.callee.name === &#x27;setTimeout&#x27;) {
+                context.report(node, message, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.typecheck_array" id="apidoc.module.eslint-plugin-angular.typecheck_array">module eslint-plugin-angular.typecheck_array</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.typecheck_array.create" id="apidoc.element.eslint-plugin-angular.typecheck_array.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_array.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function recordError(node, origin) {
+        if (node.type === &#x27;Literal&#x27; &#x26;&#x26; node.value === &#x27;[object Array]&#x27;) {
+            context.report(origin, &#x27;You should use the angular.isArray method&#x27;, {});
+        }
+    }
+
+    return {
+        MemberExpression: function(node) {
+            if (node.object.name === &#x27;Array&#x27; &#x26;&#x26; node.property.name === &#x27;isArray&#x27;) {
+                context.report(node, &#x27;You should use the angular.isArray method&#x27;, {});
+            }
+        },
+        BinaryExpression: function(node) {
+            if (node.operator === &#x27;===&#x27; || node.operator === &#x27;!==&#x27;) {
+                if (utils.isTypeOfStatement(node.left) || utils.isToStringStatement(node.left)) {
+                    recordError(node.right, node);
+                } else if (utils.isTypeOfStatement(node.right) || utils.isToStringStatement(node.right)) {
+                    recordError(node.left, node);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.typecheck_date" id="apidoc.module.eslint-plugin-angular.typecheck_date">module eslint-plugin-angular.typecheck_date</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.typecheck_date.create" id="apidoc.element.eslint-plugin-angular.typecheck_date.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_date.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function recordError(node, origin) {
+        if (node.type === &#x27;Literal&#x27; &#x26;&#x26; node.value === &#x27;[object Date]&#x27;) {
+            context.report(origin, &#x27;You should use the angular.isDate method&#x27;, {});
+        }
+    }
+
+    return {
+
+        BinaryExpression: function(node) {
+            if (node.operator === &#x27;===&#x27; || node.operator === &#x27;!==&#x27;) {
+                if (utils.isTypeOfStatement(node.left) || utils.isToStringStatement(node.left)) {
+                    recordError(node.right, node);
+                } else if (utils.isTypeOfStatement(node.right) || utils.isToStringStatement(node.right)) {
+                    recordError(node.left, node);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.typecheck_function" id="apidoc.module.eslint-plugin-angular.typecheck_function">module eslint-plugin-angular.typecheck_function</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.typecheck_function.create" id="apidoc.element.eslint-plugin-angular.typecheck_function.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_function.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function recordError(node, origin) {
+        if (node.type === &#x27;Literal&#x27; &#x26;&#x26; (node.value === &#x27;function&#x27; || node.value === &#x27;[object Function]&#x27;)) {
+            context.report(origin, &#x27;You should use the angular.isFunction method&#x27;, {});
+        }
+    }
+
+    return {
+
+        BinaryExpression: function(node) {
+            if (node.operator === &#x27;===&#x27; || node.operator === &#x27;!==&#x27;) {
+                if (utils.isTypeOfStatement(node.left) || utils.isToStringStatement(node.left)) {
+                    recordError(node.right, node);
+                } else if (utils.isTypeOfStatement(node.right) || utils.isToStringStatement(node.right)) {
+                    recordError(node.left, node);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.typecheck_number" id="apidoc.module.eslint-plugin-angular.typecheck_number">module eslint-plugin-angular.typecheck_number</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.typecheck_number.create" id="apidoc.element.eslint-plugin-angular.typecheck_number.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_number.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function recordError(node, origin) {
+        if (node.type === &#x27;Literal&#x27; &#x26;&#x26; (node.value === &#x27;number&#x27; || node.value === &#x27;[object Number]&#x27;)) {
+            context.report(origin, &#x27;You should use the angular.isNumber method&#x27;, {});
+        }
+    }
+
+
+    return {
+
+        BinaryExpression: function(node) {
+            if (node.operator === &#x27;===&#x27; || node.operator === &#x27;!==&#x27;) {
+                if (utils.isTypeOfStatement(node.left) || utils.isToStringStatement(node.left)) {
+                    recordError(node.right, node);
+                } else if (utils.isTypeOfStatement(node.right) || utils.isToStringStatement(node.right)) {
+                    recordError(node.left, node);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.typecheck_object" id="apidoc.module.eslint-plugin-angular.typecheck_object">module eslint-plugin-angular.typecheck_object</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.typecheck_object.create" id="apidoc.element.eslint-plugin-angular.typecheck_object.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_object.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function recordError(node, origin) {
+        if (node.type === &#x27;Literal&#x27; &#x26;&#x26; (node.value === &#x27;object&#x27; || node.value === &#x27;[object Object]&#x27;)) {
+            context.report(origin, &#x27;You should use the angular.isObject method&#x27;, {});
+        }
+    }
+
+    return {
+        BinaryExpression: function(node) {
+            if (node.operator === &#x27;===&#x27; || node.operator === &#x27;!==&#x27;) {
+                if (utils.isTypeOfStatement(node.left) || utils.isToStringStatement(node.left)) {
+                    recordError(node.right, node);
+                } else if (utils.isTypeOfStatement(node.right) || utils.isToStringStatement(node.right)) {
+                    recordError(node.left, node);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.typecheck_string" id="apidoc.module.eslint-plugin-angular.typecheck_string">module eslint-plugin-angular.typecheck_string</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.typecheck_string.create" id="apidoc.element.eslint-plugin-angular.typecheck_string.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.typecheck_string.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function recordError(node, origin) {
+        if (node.type === &#x27;Literal&#x27; &#x26;&#x26; (node.value === &#x27;string&#x27; || node.value === &#x27;[object String]&#x27;)) {
+            context.report(origin, &#x27;You should use the angular.isString method&#x27;, {});
+        }
+    }
+
+    return {
+
+        BinaryExpression: function(node) {
+            if (node.operator === &#x27;===&#x27; || node.operator === &#x27;!==&#x27;) {
+                if (utils.isTypeOfStatement(node.left) || utils.isToStringStatement(node.left)) {
+                    recordError(node.right, node);
+                } else if (utils.isTypeOfStatement(node.right) || utils.isToStringStatement(node.right)) {
+                    recordError(node.left, node);
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.value_name" id="apidoc.module.eslint-plugin-angular.value_name">module eslint-plugin-angular.value_name</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.value_name.create" id="apidoc.element.eslint-plugin-angular.value_name.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.value_name.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    return {
+
+        CallExpression: function(node) {
+            var prefix = context.options[0];
+            var convertedPrefix; // convert string from JSON .eslintrc to regex
+            var isValue;
+
+            if (prefix === undefined) {
+                return;
+            }
+
+            convertedPrefix = utils.convertPrefixToRegex(prefix);
+            isValue = utils.isAngularValueDeclaration(node);
+
+            if (isValue) {
+                var name = node.arguments[0].value;
+
+                if (name !== undefined &#x26;&#x26; name.indexOf(&#x27;$&#x27;) === 0) {
+                    context.report(node, &#x27;The {{value}} value should not start with &#x22;$&#x22;. This is reserved for AngularJS services
+&#x27;, {
+                        value: name
+                    });
+                } else if (name !== undefined &#x26;&#x26; !convertedPrefix.test(name)) {
+                    if (typeof prefix === &#x27;string&#x27; &#x26;&#x26; !utils.isStringRegexp(prefix)) {
+                        context.report(node, &#x27;The {{value}} value should be prefixed by {{prefix}}&#x27;, {
+                            value: name,
+                            prefix: prefix
+                        });
+                    } else {
+                        context.report(node, &#x27;The {{value}} value should follow this pattern: {{prefix}}&#x27;, {
+                            value: name,
+                            prefix: prefix.toString()
+                        });
+                    }
+                }
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.watchers_execution" id="apidoc.module.eslint-plugin-angular.watchers_execution">module eslint-plugin-angular.watchers_execution</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.watchers_execution.create" id="apidoc.element.eslint-plugin-angular.watchers_execution.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.watchers_execution.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var method = context.options[0] || &#x27;$digest&#x27;;
+    var methods = [&#x27;$apply&#x27;, &#x27;$digest&#x27;];
+    return {
+
+        MemberExpression: function(node) {
+            var forbiddenMethod = methods.filter(function(m) {
+                return m !== method;
+            });
+            if (forbiddenMethod.length &#x3e; 0 &#x26;&#x26; node.property.type === &#x27;Identifier&#x27; &#x26;&#x26; forbiddenMethod.indexOf(node.property.name) &#x3e;=
+0) {
+                context.report(node, &#x27;Instead of using the {{forbidden}}() method, you should prefer {{method}}()&#x27;, {
+                    forbidden: node.property.name,
+                    method: method
+                });
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.window_service" id="apidoc.module.eslint-plugin-angular.window_service">module eslint-plugin-angular.window_service</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.window_service.create" id="apidoc.element.eslint-plugin-angular.window_service.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.window_service.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    var restrict = [&#x27;document&#x27;, &#x27;setInterval&#x27;, &#x27;setTimeout&#x27;];
+    return {
+
+        MemberExpression: function(node) {
+            if (node.object.name === &#x27;window&#x27; &#x26;&#x26; restrict.indexOf(node.property.name) &#x3c; 0) {
+                context.report(node, &#x27;You should use the $window service instead of the default window object&#x27;, {});
+            }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
