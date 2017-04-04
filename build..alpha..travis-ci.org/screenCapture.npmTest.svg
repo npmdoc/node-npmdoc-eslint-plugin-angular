@@ -7,7 +7,7 @@
 <tspan x="10" y="74">&gt; (set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)</tspan>
 <tspan x="10" y="90"></tspan>
 <tspan x="10" y="106"></tspan>
-<tspan x="10" y="122">[MODE_BUILD=npmTest] - 2017-04-04T00:43:50Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
+<tspan x="10" y="122">[MODE_BUILD=npmTest] - 2017-04-04T00:45:08Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
 <tspan x="10" y="138">eslint-plugin-angular</tspan>
 <tspan x="10" y="154"></tspan>
 <tspan x="10" y="170"></tspan>
@@ -15,13 +15,13 @@
 <tspan x="10" y="202">c-eslint-plugin-angular/test.js</tspan>
 <tspan x="10" y="218">merging file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/test-report\</tspan>
 <tspan x="10" y="234">.json to test-report</tspan>
-<tspan x="10" y="250">&gt; server listening on http-port 33493</tspan>
+<tspan x="10" y="250">&gt; server listening on http-port 33818</tspan>
 <tspan x="10" y="266">created apidoc file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/apid\</tspan>
 <tspan x="10" y="282">oc.html</tspan>
 <tspan x="10" y="298"></tspan>
 <tspan x="10" y="314"></tspan>
 <tspan x="10" y="330">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-eslint-plugin-an\</tspan>
-<tspan x="10" y="346">gular/tmp/electron.15b366af6a50.4887e28046e66.html</tspan>
+<tspan x="10" y="346">gular/tmp/electron.15b366c26c90.461e140f807df.html</tspan>
 <tspan x="10" y="362"></tspan>
 <tspan x="10" y="378">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 <tspan x="10" y="394">[node test-case 1 of 6 passed] - testCase_buildLib_default</tspan>
@@ -29,34 +29,34 @@
 <tspan x="10" y="426">[node test-case 3 of 6 passed] - testCase_buildTest_default</tspan>
 <tspan x="10" y="442"></tspan>
 <tspan x="10" y="458">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-eslint-plugin-an\</tspan>
-<tspan x="10" y="474">gular/tmp/electron.15b366af7920.5e3c6ffdfa3ee.html</tspan>
+<tspan x="10" y="474">gular/tmp/electron.15b366c27c00.037d35f019ab8.html</tspan>
 <tspan x="10" y="490"></tspan>
 <tspan x="10" y="506">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="522">&gt; server listening on http-port 50552</tspan>
-<tspan x="10" y="538">merging file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/test-report\</tspan>
-<tspan x="10" y="554">.json to test-report</tspan>
-<tspan x="10" y="570">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="586">[4909:0404/004352:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="602">[4909:0404/004352:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="618">[4955:0404/004352:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
+<tspan x="10" y="522">merging file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/test-report\</tspan>
+<tspan x="10" y="538">.json to test-report</tspan>
+<tspan x="10" y="554">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="570">[6225:0404/004509:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="586">[6225:0404/004509:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="602">&gt; server listening on http-port 54432</tspan>
+<tspan x="10" y="618">[6266:0404/004509:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
 <tspan x="10" y="634">in process gpu-process. </tspan>
-<tspan x="10" y="650">[4909:0404/004352:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
-<tspan x="10" y="666">merging file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/test-report\</tspan>
-<tspan x="10" y="682">.json to test-report</tspan>
-<tspan x="10" y="698">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="714">[4925:0404/004352:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="730">[4925:0404/004352:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="746">[4985:0404/004352:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
-<tspan x="10" y="762">in process gpu-process. </tspan>
-<tspan x="10" y="778">[4925:0404/004352:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
-<tspan x="10" y="794"></tspan>
-<tspan x="10" y="810">browserTest - opened url /home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/a\</tspan>
-<tspan x="10" y="826">pidoc.html</tspan>
-<tspan x="10" y="842"></tspan>
+<tspan x="10" y="650">[6225:0404/004509:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
+<tspan x="10" y="666"></tspan>
+<tspan x="10" y="682">browserTest - opened url /home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/a\</tspan>
+<tspan x="10" y="698">pidoc.html</tspan>
+<tspan x="10" y="714"></tspan>
+<tspan x="10" y="730">merging file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build/test-report\</tspan>
+<tspan x="10" y="746">.json to test-report</tspan>
+<tspan x="10" y="762">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="778">[6241:0404/004510:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="794">[6241:0404/004510:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="810">[6312:0404/004510:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
+<tspan x="10" y="826">in process gpu-process. </tspan>
+<tspan x="10" y="842">[6241:0404/004510:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
 <tspan x="10" y="858"></tspan>
-<tspan x="10" y="874">browserTest - opened url http://127.0.0.1:33493?modeTest=1</tspan>
+<tspan x="10" y="874">browserTest - opened url http://127.0.0.1:33818?modeTest=1</tspan>
 <tspan x="10" y="890"></tspan>
-<tspan x="10" y="906">[4925:0404/004354:INFO:CONSOLE(245)] "----------|-----------|-----------|-----------|-----------\</tspan>
+<tspan x="10" y="906">[6241:0404/004512:INFO:CONSOLE(245)] "----------|-----------|-----------|-----------|-----------\</tspan>
 <tspan x="10" y="922">|</tspan>
 <tspan x="10" y="938">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 <tspan x="10" y="954">----------|-----------|-----------|-----------|-----------|</tspan>
@@ -64,10 +64,10 @@
 <tspan x="10" y="986">All files |       100 |       100 |       100 |       100 |</tspan>
 <tspan x="10" y="1002">----------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="1018">", source: file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/electron.15b36\</tspan>
-<tspan x="10" y="1034">6af7920.5e3c6ffdfa3ee.html (245)</tspan>
-<tspan x="10" y="1050">[4925:0404/004354:INFO:CONSOLE(245)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
+<tspan x="10" y="1034">6c27c00.037d35f019ab8.html (245)</tspan>
+<tspan x="10" y="1050">[6241:0404/004512:INFO:CONSOLE(245)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
 <tspan x="10" y="1066">l", source: file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/electron.15b3\</tspan>
-<tspan x="10" y="1082">66af7920.5e3c6ffdfa3ee.html (245)</tspan>
+<tspan x="10" y="1082">66c27c00.037d35f019ab8.html (245)</tspan>
 <tspan x="10" y="1098">[node test-case 4 of 6 passed] - testCase_buildApp_default</tspan>
 <tspan x="10" y="1114"></tspan>
 <tspan x="10" y="1130">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-a\</tspan>
@@ -89,7 +89,7 @@
 <tspan x="10" y="1386">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-a\</tspan>
 <tspan x="10" y="1402">ngular/tmp/build/screenCapture.npmTest.browser..html</tspan>
 <tspan x="10" y="1418"></tspan>
-<tspan x="10" y="1434">browserTest - exit-code 0 - http://127.0.0.1:33493?modeTest=1</tspan>
+<tspan x="10" y="1434">browserTest - exit-code 0 - http://127.0.0.1:33818?modeTest=1</tspan>
 <tspan x="10" y="1450"></tspan>
 <tspan x="10" y="1466"></tspan>
 <tspan x="10" y="1482">browserTest - merged coverage from /home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/t\</tspan>
@@ -117,8 +117,8 @@
 <tspan x="10" y="1834">.json to test-report</tspan>
 <tspan x="10" y="1850"></tspan>
 <tspan x="10" y="1866">-------------------------------------------------------</tspan>
-<tspan x="10" y="1882">| test-report - buildNpmdoc - node - linux v6.10.1 - 2017-04-04T00:43:34.603Z</tspan>
-<tspan x="10" y="1898">|   26828 ms            0 failed        6 passed      |</tspan>
+<tspan x="10" y="1882">| test-report - buildNpmdoc - node - linux v6.10.1 - 2017-04-04T00:44:33.130Z</tspan>
+<tspan x="10" y="1898">|   46018 ms            0 failed        6 passed      |</tspan>
 <tspan x="10" y="1914">-------------------------------------------------------</tspan>
 <tspan x="10" y="1930"></tspan>
 <tspan x="10" y="1946">created test-report file:///home/travis/build/npmdoc/node-npmdoc-eslint-plugin-angular/tmp/build\</tspan>
@@ -128,6 +128,6 @@
 <tspan x="10" y="2010">npmTest - 0 failed tests</tspan>
 <tspan x="10" y="2026"></tspan>
 <tspan x="10" y="2042"></tspan>
-<tspan x="10" y="2058">[MODE_BUILD=npmTest] - 2017-04-04T00:44:04Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2058">[MODE_BUILD=npmTest] - 2017-04-04T00:45:22Z - EXIT_CODE - 0</tspan>
 </text>
 </svg>
