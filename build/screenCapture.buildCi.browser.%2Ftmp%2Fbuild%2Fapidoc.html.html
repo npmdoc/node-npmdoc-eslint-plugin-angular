@@ -47,7 +47,7 @@
 }
 </style>
 <h1>api documentation for
-    <a href="https://github.com/Gillespie59/eslint-plugin-angularjs">eslint-plugin-angular (v2.2.1)</a>
+    <a href="https://github.com/Gillespie59/eslint-plugin-angularjs">eslint-plugin-angular (v2.3.0)</a>
 </h1>
 <h4>ESLint rules for AngularJS projects</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
@@ -62,6 +62,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>avoid_scope_typos</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>component_limit</span>
 
         </li>
@@ -69,6 +75,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>component_name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.</span>configs</span>
 
         </li>
 
@@ -418,6 +430,25 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.angularelement.</span>meta</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.eslint-plugin-angular.avoid_scope_typos">module eslint-plugin-angular.avoid_scope_typos</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.eslint-plugin-angular.avoid_scope_typos.create">
+            function <span class="apidocSignatureSpan">eslint-plugin-angular.avoid_scope_typos.</span>create
+            <span class="apidocSignatureSpan">(context)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">eslint-plugin-angular.avoid_scope_typos.</span>meta</span>
 
         </li>
 
@@ -1589,6 +1620,10 @@
 
 
 
+
+
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -1608,6 +1643,39 @@
             if (node.callee.name === '$' || node.callee.name === 'jQuery') {
                 context.report(node, 'You should use angular.element instead of the jQuery $ object', {});
             }
+        }
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.eslint-plugin-angular.avoid_scope_typos" id="apidoc.module.eslint-plugin-angular.avoid_scope_typos">module eslint-plugin-angular.avoid_scope_typos</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.eslint-plugin-angular.avoid_scope_typos.create" id="apidoc.element.eslint-plugin-angular.avoid_scope_typos.create">
+        function <span class="apidocSignatureSpan">eslint-plugin-angular.avoid_scope_typos.</span>create
+        <span class="apidocSignatureSpan">(context)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (context) {
+    function check(node, name) {
+        if (bad.indexOf(name) &gt;= 0) {
+            context.report(node, `The ${name} method should be replaced by $${name}, or you should rename it in order to avoid confusions
+`, {});
+        }
+    }
+    return {
+
+        Identifier: function(node) {
+            check(node, node.name);
         }
     };
 }</pre></li>
