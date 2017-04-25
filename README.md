@@ -1,4 +1,7 @@
-# api documentation for  [eslint-plugin-angular (v2.3.0)](https://github.com/Gillespie59/eslint-plugin-angularjs)  [![npm package](https://img.shields.io/npm/v/npmdoc-eslint-plugin-angular.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-eslint-plugin-angular) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-eslint-plugin-angular.svg)](https://travis-ci.org/npmdoc/node-npmdoc-eslint-plugin-angular)
+# npmdoc-eslint-plugin-angular
+
+#### basic api documentation for  [eslint-plugin-angular (v2.3.0)](https://github.com/Gillespie59/eslint-plugin-angularjs)  [![npm package](https://img.shields.io/npm/v/npmdoc-eslint-plugin-angular.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-eslint-plugin-angular) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-eslint-plugin-angular.svg)](https://travis-ci.org/npmdoc/node-npmdoc-eslint-plugin-angular)
+
 #### ESLint rules for AngularJS projects
 
 [![NPM](https://nodei.co/npm/eslint-plugin-angular.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/eslint-plugin-angular)
@@ -83,7 +86,8 @@
     "scripts": {
         "test": "gulp"
     },
-    "version": "2.3.0"
+    "version": "2.3.0",
+    "bin": {}
 }
 ```
 
